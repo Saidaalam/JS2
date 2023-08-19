@@ -1,0 +1,125 @@
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    font-family: 'Open Sans', sans-serif;
+ }
+ a{
+    text-decoration: none;
+ }
+ ul{
+    list-style-type: none;
+ }
+ .container{
+    width:1600px;
+ }
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ 
+ /* Nav Section Css Start */
+ nav{
+    background-color: #f5f5f5;
+ }
+ nav .row{
+    align-items: center;
+ }
+ nav .menu{
+    width: 100%;
+ }
+ nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+ }
+ nav .menu ul li{
+    position: relative;
+ }
+ nav .menu ul li a{
+    display: inline-block;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    padding: 26px 25px;
+    text-transform: uppercase;
+    transition: .5s;
+ }
+ nav .menu ul li a:hover {
+    color: red;
+   text-decoration: underline;
+ }
+ 
+ 
+ nav .menu ul li ul{
+    position: absolute;
+    z-index: 99999;
+ }
+ .logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 150px;
+ }
+.logo img{
+    width: 170px;
+    margin-right: 200px;
+}
+.searchInput{
+   width: 550px;
+    padding: 15px;
+    padding-right: 50px;
+    font-size: 26px;
+    box-shadow: 5px 6px;
+}
+
+#searchBtn{
+    padding:10px 20px;
+    font-size: 38px;
+    background-color: orangered;
+    color: white;
+}
+
+.menuBtn{
+   padding:10px 20px;
+   margin-left: 170px;
+   font-size: 38px;
+   background-color: orangered;
+   color: white;
+}
+#bannar img{
+   width: 100%;
+}
+aside{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 25%;
+   height: 100%;
+   background-color: rgb(248, 222, 183);
+   padding-top: 150px;
+   text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   font-family: arial;
+   transform: scaleX(0);
+  opacity: 0;
+  transition: 0.35s;
+  transform-origin: left;
+ }
+
+ .sidebarActive{
+   transform: scaleX(1);
+   opacity: 1;
+   
+ }
+ 
+ aside a{
+   color: black;
+   text-decoration: none;
+   margin-bottom: 25px;
+   display: block;
+   font-size: 25px;
+ }
